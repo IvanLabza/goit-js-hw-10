@@ -51,18 +51,23 @@ body {
 }
 
 .cat-info .cat-description {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+        align-items: center;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 25px;
 }
 
 .cat-info .cat-description img {
-    width: 200px;
+    width: 280px;
     height: auto;
     border-radius: 10px;
     border: 2px solid #ccc;
-    margin-right: 20px;
+    flex-shrink: 0;
+    justify-content: center;
 }
+
 
 .cat-info .cat-description .cat-text {
     flex-grow: 1;
@@ -73,4 +78,22 @@ body {
 
 .is-hidden {
     display: none;
+}
+
+.ss-main {
+    width: 65%;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 15px;
+}
+
+
+@media screen and (min-width:800px) {
+.cat-info .cat-description{
+    flex-flow: unset;
+
+}
 }
